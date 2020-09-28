@@ -1,14 +1,11 @@
 /* FizzBuzz program solution */
-Programs that prinst serial numbers , but for multiples of 3 it prints "Fizz" instead of the number and for multiples of five it pronts "Buzz" . 
+Programs that prints serial numbers upto 100, but for multiples of 3 it prints "Fizz" instead of the number and for multiples of five it pronts "Buzz" . 
 For numbers which are multiples of both three and five print "FizzBuzz".
 
 
+    while(count<100){
 
-var result = []
-var count =1
-
-function fb(){
-    
+   
     if ((count%3 ===0) && (count%5 ===0)){
         result.push("FizzBuzz")
     }
@@ -20,8 +17,13 @@ function fb(){
         result.push("Fizz")
     }
     
-    else
-    result.push(count);
-    count++
+    else {
+        result.push(count);
+    }
     
+    count++
+
+    }
+
+    console.log(result)
 }
